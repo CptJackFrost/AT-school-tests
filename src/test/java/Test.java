@@ -9,7 +9,9 @@ public class Test {
 
         //System.out.println("Сравнение объектов");
         //compare.testCompareObjects();
-        System.out.println("Тест Map");
-        map.test();
+        //System.out.println("Тест Map");
+        //map.test();
+        System.out.println("Тест сортировки");
+        sort.test();
     }
 }
