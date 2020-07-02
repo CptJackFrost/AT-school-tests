@@ -24,10 +24,13 @@ public class Map {
         map.put("Андреев", "Андрей");
 
         int count = 0;
+        lastName = lastName.trim().toLowerCase();
+        firstName = firstName.trim().toLowerCase();
+
         for (HashMap.Entry<String, String> hashMap : map.entrySet()) {
             String key = hashMap.getKey().trim().toLowerCase();
             String value = hashMap.getValue().trim().toLowerCase();
-            if(key.equals(lastName.trim().toLowerCase()) && value.equals(firstName.trim().toLowerCase())) count++;
+            if(key.equals(lastName) && value.equals(firstName)) count++;
         }
         return count;
         // Передать фамилию и имя человека в метод
@@ -43,8 +46,9 @@ public class Map {
      * @return - HashMap уже с удаленным элементом
      */
     public static HashMap<String, String> deleteValueFromMap(HashMap<String, String> map, String value) {
-        for (HashMap.Entry<String, String> ent : map.entrySet()) {
-            if (ent.getValue().equals(value)) {
+        HashMap<String, String> copy = new HashMap<>(map);
+        for (HashMap.Entry<String, String> ent : copy.entrySet()) {
+            if (ent.getValue().trim().toLowerCase().equals(value.trim().toLowerCase())) {
                 map.remove(ent.getKey());
             }
         }

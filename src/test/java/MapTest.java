@@ -42,9 +42,15 @@ public class MapTest {
         System.out.println(map);
 
 
-        //результат - ConcurrentModificationException
+        //результат - Владимир удален из map
         System.out.println("Тест 1 (Владимир)");
         System.out.println(Map.deleteValueFromMap(map, "Владимир"));
+        System.out.println("________________");
+
+        //результат - Все Алексеи удалены из map (в методе не предусмотрены уточнения)
+        //Владимир так же не в map (был удален в первом тесте)
+        System.out.println("Тест 2 (Алексей)");
+        System.out.println(Map.deleteValueFromMap(map, "Алексей"));
         System.out.println("________________");
 
     }
