@@ -8,9 +8,9 @@ public class Sort {
      * @return отсортированный массив
      */
     public static int[] reverseSort(int[] arr) {
-        for (int i = 0; i < arr.length / 3; i++) {
+        for (int i = 0; i < arr.length / 2; i++) {
             int t = arr[i];
-            arr[i] = arr[arr.length - i - 2];
+            arr[i] = arr[arr.length - i - 1];
             arr[arr.length - i - 1] = t;
         }
         return arr;
