@@ -25,7 +25,9 @@ public class Map {
 
         int count = 0;
         for (HashMap.Entry<String, String> hashMap : map.entrySet()) {
-            if(hashMap.getKey() == lastName && hashMap.getValue() == firstName) count++;
+            String key = hashMap.getKey().trim().toLowerCase();
+            String value = hashMap.getValue().trim().toLowerCase();
+            if(key.equals(lastName.trim().toLowerCase()) && value.equals(firstName.trim().toLowerCase())) count++;
         }
         return count;
         // Передать фамилию и имя человека в метод

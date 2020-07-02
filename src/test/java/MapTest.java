@@ -10,7 +10,7 @@ public class MapTest {
 
         System.out.println("Подсчет элементов");
 
-        //ожидается 3, фактический результат - 0
+        //ожидается 3, фактический результат - 3
         System.out.println("Тест 1 (Ерохин Сергей)");
         System.out.println(Map.countElementsInMap("Ерохин", "Сергей"));
         System.out.println("________________");
@@ -20,7 +20,7 @@ public class MapTest {
         System.out.println(Map.countElementsInMap("Дмитров", "Алексей"));
         System.out.println("________________");
 
-        //ожидается 2, фактический результат - 1
+        //ожидается 2, фактический результат - 2
         System.out.println("Тест 1 (Андреев Андрей)");
         System.out.println(Map.countElementsInMap("Андреев", "Андрей"));
         System.out.println("________________");
