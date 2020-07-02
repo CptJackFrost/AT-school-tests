@@ -6,7 +6,12 @@ import java.util.HashMap;
 
 public class MapTest {
 
-    public static void test (){
+    public void testMap(){
+        testCount();
+        testDelete();
+    }
+
+    private void testCount () {
 
         System.out.println("Подсчет элементов");
 
@@ -24,7 +29,9 @@ public class MapTest {
         System.out.println("Тест 1 (Андреев Андрей)");
         System.out.println(Map.countElementsInMap("Андреев", "Андрей"));
         System.out.println("________________");
+    }
 
+    private void testDelete(){
 
         System.out.println("Удаление элементов");
 
