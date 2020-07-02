@@ -8,8 +8,6 @@ public class CompareTest {
 
     public void testCompareObjects() {
 
-        System.out.println("Сравнение объектов");
-
         Object first = new Object();
         Object second = new Object();
 
