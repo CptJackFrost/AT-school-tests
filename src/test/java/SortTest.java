@@ -2,8 +2,6 @@ package test.java;
 
 import main.java.Sort;
 
-import java.lang.reflect.Array;
-
 public class SortTest {
     public void test(){
 
@@ -14,7 +12,7 @@ public class SortTest {
         //ожидаемый результат [7, 5, 2, 1, 0], фактический - [1, 5, 7, 1, 2]
         System.out.println("Тест 1 (сокращенный синтаксис, длина массива 5)");
         printArray(Sort.reverseSort(array1));
-        System.out.println("_______________");
+        System.out.println("\n_______________");
 
         //ожидаемый результат [5, 4, 3, 2, 1, 0], фактический - [4, 3, 2, 3, 1, 0]
         int [] array2;
@@ -28,7 +26,7 @@ public class SortTest {
 
         System.out.println("Тест 2 (new int[], другие значения, длина массива 6)");
         printArray(Sort.reverseSort(array2));
-        System.out.println("_______________");
+        System.out.println("\n_______________");
 
     }
 
